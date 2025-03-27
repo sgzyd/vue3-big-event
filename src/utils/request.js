@@ -4,7 +4,7 @@ import axios from 'axios'
 // import router from '@/router'
 
 export const service = axios.create({
-  baseURL: '/api',
+  baseURL: 'http://localhost:3000',
   timeout: 5000,
 })
 
