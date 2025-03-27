@@ -24,6 +24,14 @@ const fetchData = async () => {
   const weatherStore = useWeatherStore()
   weatherStore.setWeather(data)
 }
+const testMockoon = async () => {
+  service
+    .post('/password', {
+
+    }).then((res) => {
+      console.log(res)
+    })
+}
 </script>
 
 <template>
@@ -31,6 +39,8 @@ const fetchData = async () => {
     <router-view></router-view>
   </div>
   <button @click="fetchData">测试axios</button>
+  <button @click="testMockoon">测试axios</button>
+
 </template>
 
 <style>
